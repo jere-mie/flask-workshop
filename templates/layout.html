@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta property="og:site_name" content="My Site Name" />
+        <meta property="og:title" content="My Site Title" />
+        <meta property="og:description" content="My Site Description" />
+        <meta property="og:type" content="website" />
+        <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('calc') }}">Calc</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>

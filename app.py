@@ -14,9 +14,25 @@ def home():
     return render_template('home.html')
 
 @app.route('/about', methods=['GET'])
-def home():
-    return render_template('home.html')
+def about():
+    return render_template('about.html')
 
 @app.route('/contact', methods=['GET'])
-def home():
-    return render_template('home.html')
+def contact():
+    return render_template('contact.html')
+
+@app.route('/calc', methods=['GET', 'POST'])
+def calc():
+    if request.method == 'POST':
+        num = request.form['num']
+        return redirect(url_for('calculate', num=num))
+    else:
+        return render_template('calc.html')
+
+@app.route('/calculate/<int:num>', methods=['GET'])
+def calculate(num):
+    return render_template('result.html', number=num*3)
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
