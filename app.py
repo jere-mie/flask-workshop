@@ -24,7 +24,8 @@ def about():
 # redirect to contact page
 @app.route('/contact', methods=['GET'])
 def contact():
-    return render_template('contact.html')
+    contacts = ['Jeremie - Developer','Walid - UI/UX','Matt - Designer']
+    return render_template('contact.html', contacts=contacts)
 
 # method demonstrating receiving POST request
 @app.route('/calc', methods=['GET', 'POST'])

@@ -1,4 +1,7 @@
 {% extends 'layout.html' %}
 {% block content %}
-<h1>Contact</h1>
+<h1>Our Contacts</h1>
+    {% for contact in contacts %}
+        <h3>{{ contact }}</h3>
+    {% endfor %}
 {% endblock %}

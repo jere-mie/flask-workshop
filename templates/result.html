@@ -1,4 +1,9 @@
 {% extends 'layout.html' %}
 {% block content %}
 <h1>Your Result is: {{ number }}</h1>
+    {% if number%2==0 %}
+        <h2>This is an even number!</h2>
+    {% else %}
+        <h2>This is not an even number!</h2>
+    {% endif %}
 {% endblock %}
