@@ -1,5 +1,5 @@
-# BorderHacks 2020 Intro to Flask Workshop
-Presentation and supporting materials for my BorderHacks 2020 Intro to Flask Workshop
+# WinHacks 2022 Intro to Flask Workshop
+Presentation and supporting materials for my WinHacks 2022 Intro to Flask Workshop
 Created and presented by Jeremie Bornais
 
 #### View Slides [Here](https://docs.google.com/presentation/d/1jZTET3T5VZQlNugtnz1M5ggtMgseNeJx8KEe8Rrf5Ps/edit?usp=sharing)

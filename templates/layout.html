@@ -13,13 +13,10 @@
         <nav>
             <ul>
                 <li><a href="{{ url_for('home') }}">Home</a></li>
-                <li><a href="{{ url_for('about') }}">About</a></li>
-                <li><a href="{{ url_for('contact') }}">Contact</a></li>
-                <li><a href="{{ url_for('calc') }}">Calc</a></li>
+                <li><a href="{{ url_for('add') }}">Add Item</a></li>
+                <li><a href="{{ url_for('view') }}">View Items</a></li>
             </ul>
         </nav>
-        <div class="container">
-            {% block content %}{% endblock %}
-        </div>
+    {% block content %}{% endblock %}
     </body>
 </html>

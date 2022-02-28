@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h1>View Items</h1>
+
+{% for item in items %}
+<h3>{{ item.content }}</h3>
+<h4><a href="{{ url_for('delete', id=item.id) }}">Delete</a></h4>
+<h4><a href="{{ url_for('update', id=item.id) }}">Update</a></h4>
+<hr>
+
+{% endfor %}
+
+{% endblock %}
