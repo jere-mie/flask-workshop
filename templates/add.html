@@ -1,9 +1,8 @@
-{% extends 'layout.html' %}
-{% block content %}
+{% extends 'layout.html' %} {% block content %}
 <h1>Add Item to Shopping List</h1>
 
 <form method="POST">
-    <input type="text" name="content" placeholder="Item Name">
-    <input type="submit" value="Submit">
+  <input type="text" name="name" placeholder="Item Name" />
+  <input type="submit" value="Submit" />
 </form>
 {% endblock %}

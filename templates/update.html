@@ -1,9 +1,8 @@
-{% extends 'layout.html' %}
-{% block content %}
+{% extends 'layout.html' %} {% block content %}
 <h1>Update Item</h1>
 
 <form method="POST">
-    <input type="text" name="content" value="{{ item.content }}">
-    <input type="submit" value="Submit">
+  <input type="text" name="name" value="{{ item.name }}" />
+  <input type="submit" value="Submit" />
 </form>
 {% endblock %}
