@@ -3,6 +3,7 @@ from flask import Flask, render_template, url_for, redirect, request
 from flask_sqlalchemy import SQLAlchemy
 import os
 import json
+import sys
 
 # this is for getting the secret key
 with open('secrets.json') as f:
@@ -69,12 +70,19 @@ def update(id):
     else:
         return render_template('update.html', item=item)
 
-# this is what allows you to run the app
-if __name__ == "__main__":
+
+# running the site
+if __name__=='__main__':
 
     # creating db if it doesn't exist
     if not os.path.exists('site.db'):
         db.create_all()
 
-    # running the app
-    app.run(debug=True)
+    # run this command with any additional arg to run in production
+    if len(sys.argv) > 1:
+        print('<< PROD >>')
+        os.system(f"gunicorn -b '127.0.0.1:{data['port']}' app:app")
+    # or just run without an additional arg to run in debug
+    else:
+        print('<< DEBUG >>')
+        app.run(debug=True)
