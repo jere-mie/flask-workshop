@@ -5,7 +5,7 @@ Created and presented by Jeremie Bornais
 
 ## Slides
 
-View Slides [Here](https://docs.google.com/presentation/d/1jxDnRvU--Xqapb6oFb1GYnFLbr33S8BHSHbgPN9NJnc/edit?usp=sharing).
+View slides [here](docs/slides.pdf).
 
 ## Resources
 
