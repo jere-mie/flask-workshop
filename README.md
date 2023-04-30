@@ -47,4 +47,3 @@ This folder contains all static files you want to use in your Flask app. This wo
 ### templates/
 
 This folder contains all of your HTML templates. Usually you use a layout.html for things like metadata and a navbar, and then you create other templates that extend this template
-
