@@ -6,14 +6,17 @@ import json
 import sys
 
 # this is for getting the secret key
-with open('secrets.json') as f:
-    data = json.load(f)
+with open('config.json') as f:
+    config = json.load(f)
 
 # creating an instance of Flask as our app
 app = Flask(__name__)
-app.config['SECRET_KEY'] = data['secret_key']
+app.config['SECRET_KEY'] = config['secret_key']
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
-db = SQLAlchemy(app)
+
+# creating database connection variable
+db = SQLAlchemy()
+db.init_app(app)
 
 # create model for item
 class Item(db.Model):
@@ -21,7 +24,7 @@ class Item(db.Model):
     name = db.Column(db.String(256), nullable=False)
 
     def __repr__(self):
-        return f'Item {self.id} => {self.name}'
+        return f'<Item {self.id} => {self.name}>'
 
 # home
 @app.route('/', methods=['GET'])
@@ -75,13 +78,15 @@ def update(id):
 if __name__=='__main__':
 
     # creating db if it doesn't exist
-    if not os.path.exists('site.db'):
-        db.create_all()
+    if not os.path.exists('instance/site.db'):
+        print("Database not found, creating...")
+        with app.app_context():
+            db.create_all()
 
     # run this command with any additional arg to run in production
     if len(sys.argv) > 1:
         print('<< PROD >>')
-        os.system(f"gunicorn -b '127.0.0.1:{data['port']}' app:app")
+        os.system(f"gunicorn -b '0.0.0.0:{config['port']}' app:app")
     # or just run without an additional arg to run in debug
     else:
         print('<< DEBUG >>')
