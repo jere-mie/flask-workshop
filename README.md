@@ -1,6 +1,6 @@
-# MasseyHacks 2023 ~ Intro to Flask Workshop
+# WinHacks 2024 ~ Intro to Flask Workshop
 
-Presentation and supporting materials for my MasseyHacks 2023 Intro to Flask Workshop  
+Presentation and supporting materials for my WinHacks 2024 Intro to Flask Workshop  
 Created and presented by Jeremie Bornais
 
 ## Slides
