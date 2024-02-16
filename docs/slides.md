@@ -19,12 +19,12 @@ Sample code available at [flask.bornais.ca](https://flask.bornais.ca)
 
 # A Little About Me
 
-- President of the UWindsor Computer Science Society
+- Software Developer at RIIS, Publicis Sapient, Assent and GreenShield
 - Co-Founder of WinHacks and BorderHacks
-- Software developer intern at Publicis Sapient, Assent and Green Shield
 - Research & Teaching assistant at UWindsor
-- Project Lead at Google Developer Student Club
-- 10X Hackathon participant
+- Former President of the UWindsor Computer Science Society
+- Former Project Lead at Google Developer Student Club
+- 10+ Hackathon participant
 
 [jeremie.bornais.ca](https://jeremie.bornais.ca)
 [github.com/jere-mie](https://github.com/jere-mie)
@@ -279,3 +279,6 @@ I hope you learned something new 😀
 
 Remember, the source code and these slides can be found here:
 [github.com/jere-mie/flask-workshop](https://github.com/jere-mie/flask-workshop)
+
+**You can also find a fully-featured Flask template with database support and user authentication here:**
+[github.com/jere-mie/flask-template](https://github.com/jere-mie/flask-template)
