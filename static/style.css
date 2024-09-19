@@ -14,7 +14,7 @@ body {
   text-align: center;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -23,17 +23,17 @@ nav > ul {
   padding-left: 30px;
 }
 
-nav > ul > li {
+nav>ul>li {
   padding: 12px;
   background-color: #222;
 }
 
-nav > ul > li:hover {
+nav>ul>li:hover {
   transition-duration: 300ms;
   background-color: #333;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 8px;
   text-decoration: none;
   color: #fff;

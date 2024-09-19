@@ -2,21 +2,21 @@
 <h1>View Shopping List</h1>
 
 <table>
-  <tr>
-    <th>Id</th>
-    <th>Item Name</th>
-    <th>Actions</th>
-  </tr>
-  {% for item in items %}
-  <tr>
-    <td>{{ item.id }}</td>
-    <td>{{ item.name }}</td>
-    <td>
-      <a href="{{ url_for('update', id=item.id) }}">Update</a>
-      <a href="{{ url_for('delete', id=item.id) }}">Delete</a>
-    </td>
-  </tr>
-  {% endfor %}
+    <tr>
+        <th>Id</th>
+        <th>Item Name</th>
+        <th>Actions</th>
+    </tr>
+    {% for item in items %}
+    <tr>
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>
+            <a href="{{ url_for('update_page', id=item.id) }}">Update</a>
+            <a href="{{ url_for('delete', id=item.id) }}">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
 </table>
-<h4><a href="{{ url_for('add') }}">Add Item</a></h4>
+<h4><a href="{{ url_for('add_page') }}">Add Item</a></h4>
 {% endblock %}
