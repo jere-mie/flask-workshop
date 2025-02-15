@@ -2,16 +2,15 @@
 marp: true
 theme: default
 _class: lead
-# paginate: true
 backgroundColor: #fff
-# backgroundImage: url('https://marp.app/assets/hero-background.svg')
 ---
 
 ![bg right:40% 70%](static/flask_logo.png)
-# **Intro to Flask**
+# **Build Your First Full Stack App With Flask**
 
 Presented by Jeremie Bornais
-Sample code available at [flask.bornais.ca](https://flask.bornais.ca)
+Sample code available at:  
+[github.com/jere-mie/flask-workshop](https://github.com/jere-mie/flask-workshop)
 
 ---
 
@@ -19,12 +18,12 @@ Sample code available at [flask.bornais.ca](https://flask.bornais.ca)
 
 # A Little About Me
 
-- Software Developer at RIIS, Publicis Sapient, Assent and GreenShield
+- Full Stack Software Developer at Assent
 - Co-Founder of WinHacks and BorderHacks
-- Research & Teaching assistant at UWindsor
+- Former Research & Teaching assistant at UWindsor
 - Former President of the UWindsor Computer Science Society
-- Former Project Lead at Google Developer Student Club
-- 10+ Hackathon participant
+- Former Project Lead at GDSC
+- 10+ Hackathon participant, mentor, speaker, organizer
 
 [jeremie.bornais.ca](https://jeremie.bornais.ca)
 [github.com/jere-mie](https://github.com/jere-mie)
@@ -45,7 +44,6 @@ Sample code available at [flask.bornais.ca](https://flask.bornais.ca)
 5. Next Steps
     - SQLAlchemy, User Authentication, and other ways to extend your app
 6. Interactive Demo
-    - We'll be making our own Flask app from scratch!
 
 ---
 
@@ -194,9 +192,7 @@ In layout.html:
 ```html
 <!DOCTYPE html>
 <html>
- <head>
-   <title>Title</title>
- </head>
+ <head><title>Title</title></head>
   <body>
    {% block content %}{% endblock %}
  </body>
