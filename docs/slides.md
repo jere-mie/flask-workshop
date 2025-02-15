@@ -121,8 +121,10 @@ if __name__ == "__main__":
 
 # Common structure of a Flask app
 
+```
 - app.py
-- config.json
+- .env
+- .gitignore
 - static/
   - style.css
   - script.js
@@ -131,6 +133,7 @@ if __name__ == "__main__":
   - layout.html
   - home.html
   - ...
+```
 
 ---
 
@@ -174,7 +177,8 @@ def contact():
 @app.route('/posts/<post_id>')
 def posts(post_id):
     # do something with post_id
-    return render_template('about.html')
+    post = get_post(post_id)
+    return render_template('post.html', post=post)
 ```
 
 ## Linking this route with url_for():
@@ -276,5 +280,5 @@ I hope you learned something new 😀
 Remember, the source code and these slides can be found here:
 [github.com/jere-mie/flask-workshop](https://github.com/jere-mie/flask-workshop)
 
-**You can also find a fully-featured Flask template with database support and user authentication here:**
-[github.com/jere-mie/flask-template](https://github.com/jere-mie/flask-template)
+**Learn How To Host Your Flask App For Free Here:**
+[blog.bornais.ca/posts/2023-10-18-gcp-caddy-tutorial](https://blog.bornais.ca/posts/2023-10-18-gcp-caddy-tutorial/)

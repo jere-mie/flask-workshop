@@ -10,7 +10,10 @@ View slides [here](docs/slides.pdf).
 
 ## Resources
 
-Another helpful tutorial can be found [here](https://www.youtube.com/watch?v=Z1RJmh_OqeA).
+- Another helpful tutorial can be found [here](https://www.youtube.com/watch?v=Z1RJmh_OqeA).
+- Learn how to host your Flask app on Google Cloud for free [here](https://blog.bornais.ca/posts/2023-10-18-gcp-caddy-tutorial/),
+- Documentation for [Flask](https://flask.palletsprojects.com/en/stable/), [Flask-SQLAlchemy](https://flask-sqlalchemy.readthedocs.io/en/stable/)
+- A recording of this workshop can be found [here](https://www.youtube.com/watch?v=IZcWxCWS7bg).
 
 ## How to run this app
 
